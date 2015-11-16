@@ -1,0 +1,11 @@
+Z:\Courses\cps613\Utilities\Scanning\Scanning\bin\Debug\Scanning.exe.config
+Z:\Courses\cps613\Utilities\Scanning\Scanning\bin\Debug\Scanning.exe
+Z:\Courses\cps613\Utilities\Scanning\Scanning\bin\Debug\Scanning.pdb
+Z:\Courses\cps613\Utilities\Scanning\Scanning\bin\Debug\Scanning.xml
+Z:\Courses\cps613\Utilities\Scanning\Scanning\obj\Debug\Scanning.MainForm.resources
+Z:\Courses\cps613\Utilities\Scanning\Scanning\obj\Debug\Scanning.Resources.resources
+Z:\Courses\cps613\Utilities\Scanning\Scanning\obj\Debug\Scanning.vbproj.GenerateResource.Cache
+Z:\Courses\cps613\Utilities\Scanning\Scanning\obj\Debug\Scanning.exe
+Z:\Courses\cps613\Utilities\Scanning\Scanning\obj\Debug\Scanning.xml
+Z:\Courses\cps613\Utilities\Scanning\Scanning\obj\Debug\Scanning.pdb
+Z:\Courses\cps613\Utilities\Scanning\Scanning\obj\Debug\Scanning.SubMenu.resources
