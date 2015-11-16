@@ -72,3 +72,15 @@ C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\bin\Debug\Scanning.exe.
 C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.exe
 C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.xml
 C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.pdb
+C:\Users\Ahmad\Desktop\Last Semester\CPS613-master\CPS613-master\Scanning\Scanning\bin\Debug\Scanning.exe.config
+C:\Users\Ahmad\Desktop\Last Semester\CPS613-master\CPS613-master\Scanning\Scanning\obj\Debug\Scanning.exe
+C:\Users\Ahmad\Desktop\Last Semester\CPS613-master\CPS613-master\Scanning\Scanning\obj\Debug\Scanning.xml
+C:\Users\Ahmad\Desktop\Last Semester\CPS613-master\CPS613-master\Scanning\Scanning\obj\Debug\Scanning.pdb
+C:\Users\Ahmad\Desktop\Last Semester\CPS613-master\CPS613-master\Scanning\Scanning\bin\Debug\Scanning.exe
+C:\Users\Ahmad\Desktop\Last Semester\CPS613-master\CPS613-master\Scanning\Scanning\bin\Debug\Scanning.pdb
+C:\Users\Ahmad\Desktop\Last Semester\CPS613-master\CPS613-master\Scanning\Scanning\bin\Debug\Scanning.xml
+C:\Users\Ahmad\Desktop\Last Semester\CPS613-master\CPS613-master\Scanning\Scanning\obj\Debug\Scanning.MainForm.resources
+C:\Users\Ahmad\Desktop\Last Semester\CPS613-master\CPS613-master\Scanning\Scanning\obj\Debug\Scanning.Resources.resources
+C:\Users\Ahmad\Desktop\Last Semester\CPS613-master\CPS613-master\Scanning\Scanning\obj\Debug\Scanning.SubMenu.resources
+C:\Users\Ahmad\Desktop\Last Semester\CPS613-master\CPS613-master\Scanning\Scanning\obj\Debug\Scanning.TopMenu.resources
+C:\Users\Ahmad\Desktop\Last Semester\CPS613-master\CPS613-master\Scanning\Scanning\obj\Debug\Scanning.vbproj.GenerateResource.Cache

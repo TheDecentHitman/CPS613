@@ -5,6 +5,17 @@
     Private totalmenus As Integer
     Private Submenus As SubMenu()
 
+    Public Sub Initialize(TempSubmenus As SubMenu())
+        totalmenus = TempSubmenus.Length
+        ReDim Submenus(totalmenus)
+        Dim I As Integer = 0
+        For Each SubMenu In TempSubmenus
+            Submenus(I) = TempSubmenus(I)
+            I += 1
+        Next
+        InitializeSubMenus()
+    End Sub
+
     Public Sub Initialize(menu1 As SubMenu)
         totalmenus = 1
         ReDim Submenus(totalmenus)
