@@ -23,8 +23,4 @@
         TopMenu.ResumeScanning()
     End Sub
 
-   
-    Private Sub SubMenu1_Paint(sender As Object, e As PaintEventArgs) Handles SubMenu1.Paint
-
-    End Sub
 End Class

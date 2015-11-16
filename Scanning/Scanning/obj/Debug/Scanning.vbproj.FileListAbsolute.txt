@@ -68,15 +68,7 @@ C:\Transporter\Courses 1\CPS613\OtherMaterial\Scanning - V2\Scanning\obj\Debug\S
 C:\Transporter\Courses 1\CPS613\OtherMaterial\Scanning - V2\Scanning\obj\Debug\Scanning.TopMenu.resources
 C:\Transporter\Courses 1\CPS613\OtherMaterial\Scanning - V2\Scanning\obj\Debug\Scanning.vbproj.GenerateResource.Cache
 C:\Transporter\Courses\CPS613\OtherMaterial\Scanning - V2\Scanning\bin\Debug\Scanning.pdb
-C:\Users\Ahmad\Desktop\Last Semester\CPS613\Scanning\Scanning\Scanning\bin\Debug\Scanning.exe.config
-C:\Users\Ahmad\Desktop\Last Semester\CPS613\Scanning\Scanning\Scanning\obj\Debug\Scanning.exe
-C:\Users\Ahmad\Desktop\Last Semester\CPS613\Scanning\Scanning\Scanning\obj\Debug\Scanning.xml
-C:\Users\Ahmad\Desktop\Last Semester\CPS613\Scanning\Scanning\Scanning\obj\Debug\Scanning.pdb
-C:\Users\Ahmad\Desktop\Last Semester\CPS613\Scanning\Scanning\Scanning\bin\Debug\Scanning.exe
-C:\Users\Ahmad\Desktop\Last Semester\CPS613\Scanning\Scanning\Scanning\bin\Debug\Scanning.pdb
-C:\Users\Ahmad\Desktop\Last Semester\CPS613\Scanning\Scanning\Scanning\bin\Debug\Scanning.xml
-C:\Users\Ahmad\Desktop\Last Semester\CPS613\Scanning\Scanning\Scanning\obj\Debug\Scanning.MainForm.resources
-C:\Users\Ahmad\Desktop\Last Semester\CPS613\Scanning\Scanning\Scanning\obj\Debug\Scanning.Resources.resources
-C:\Users\Ahmad\Desktop\Last Semester\CPS613\Scanning\Scanning\Scanning\obj\Debug\Scanning.SubMenu.resources
-C:\Users\Ahmad\Desktop\Last Semester\CPS613\Scanning\Scanning\Scanning\obj\Debug\Scanning.TopMenu.resources
-C:\Users\Ahmad\Desktop\Last Semester\CPS613\Scanning\Scanning\Scanning\obj\Debug\Scanning.vbproj.GenerateResource.Cache
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\bin\Debug\Scanning.exe.config
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.exe
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.xml
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.pdb

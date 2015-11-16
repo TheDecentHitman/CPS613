@@ -125,7 +125,7 @@ Partial Class MainForm
         Me.SubMenu2.Controls.Add(Me.Button5)
         Me.SubMenu2.Location = New System.Drawing.Point(31, 213)
         Me.SubMenu2.Name = "SubMenu2"
-        Me.SubMenu2.Size = New System.Drawing.Size(443, 112)
+        Me.SubMenu2.Size = New System.Drawing.Size(347, 112)
         Me.SubMenu2.TabIndex = 5
         '
         'Button7
@@ -229,7 +229,7 @@ Partial Class MainForm
         Me.Controls.Add(Me.SubMenu1)
         Me.Controls.Add(Me.TopMenu)
         Me.Name = "MainForm"
-        Me.Text = "The Group - Home Control V1.0"
+        Me.Text = "CPS613 Scanning Example"
         Me.SubMenu3.ResumeLayout(False)
         Me.SubMenu2.ResumeLayout(False)
         Me.SubMenu1.ResumeLayout(False)
