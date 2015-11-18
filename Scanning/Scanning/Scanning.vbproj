@@ -85,6 +85,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entertainment.Designer.vb">
+      <DependentUpon>Entertainment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Entertainment.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MainForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Player.Designer.vb">
+      <DependentUpon>Player.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Player.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SubMenu.Designer.vb">
       <DependentUpon>SubMenu.vb</DependentUpon>
     </Compile>
@@ -121,6 +133,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Entertainment.resx">
+      <DependentUpon>Entertainment.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +145,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Player.resx">
+      <DependentUpon>Player.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SubMenu.resx">
       <DependentUpon>SubMenu.vb</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +156,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -165,6 +184,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movie-theater-auditorium-540x360.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

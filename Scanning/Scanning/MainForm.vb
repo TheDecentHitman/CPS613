@@ -19,7 +19,12 @@
     Private Sub Button_Click(sender As Object, e As EventArgs) Handles NavigationButton.Click, EnvironmentButton.Click, EntertainmentButton.Click, CommunicationsButton.Click, BackButton.Click, HomeButton.Click, SettingsButton.Click
         TopMenu.StopScanning()
         Dim b As Button = sender
-        MsgBox(b.ToString() & " was selected")
+        Me.Hide()
+        Entertainment.Show()
         TopMenu.ResumeScanning()
+    End Sub
+
+    Private Sub OptionsSubMenu_Paint(sender As Object, e As PaintEventArgs) Handles OptionsSubMenu.Paint
+
     End Sub
 End Class

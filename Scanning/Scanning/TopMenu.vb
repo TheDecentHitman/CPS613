@@ -84,8 +84,8 @@
 
 #Region "Scanning functionality"
 
-    Private scanninglevel As Integer
-    Private focusIsOn As Integer
+    Public scanninglevel As Integer
+    Public focusIsOn As Integer
 
     ' Start scanning on the first submenu
     Public Sub StartScanning()
