@@ -85,11 +85,71 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entertainment.Designer.vb">
-      <DependentUpon>Entertainment.vb</DependentUpon>
+    <Compile Include="AudioScreen.Designer.vb">
+      <DependentUpon>AudioScreen.vb</DependentUpon>
     </Compile>
-    <Compile Include="Entertainment.vb">
+    <Compile Include="AudioScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BlindsSpecificRoomScreen.Designer.vb">
+      <DependentUpon>BlindsSpecificRoomScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BlindsSpecificRoomScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BottomBar.Designer.vb">
+      <DependentUpon>BottomBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BottomBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommunicationScreen.Designer.vb">
+      <DependentUpon>CommunicationScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CommunicationScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EntertainmentScreen.Designer.vb">
+      <DependentUpon>EntertainmentScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EntertainmentScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EnvironmentScreen.Designer.vb">
+      <DependentUpon>EnvironmentScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EnvironmentScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FansSpecificRoomScreen.Designer.vb">
+      <DependentUpon>FansSpecificRoomScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FansSpecificRoomScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomeScreen.Designer.vb">
+      <DependentUpon>HomeScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HomeScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IncomingMessage.Designer.vb">
+      <DependentUpon>IncomingMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IncomingMessage.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LightsScreen.Designer.vb">
+      <DependentUpon>LightsScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LightsScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LightsSpecificRoomScreen.Designer.vb">
+      <DependentUpon>LightsSpecificRoomScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LightsSpecificRoomScreen.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="MainForm.vb">
       <SubType>Form</SubType>
@@ -97,6 +157,18 @@
     <Compile Include="MainForm.Designer.vb">
       <DependentUpon>MainForm.vb</DependentUpon>
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageScreen.Designer.vb">
+      <DependentUpon>MessageScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MessageScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MusicScreen.Designer.vb">
+      <DependentUpon>MusicScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MusicScreen.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -113,11 +185,35 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Player.Designer.vb">
-      <DependentUpon>Player.vb</DependentUpon>
+    <Compile Include="NavigationScreen.Designer.vb">
+      <DependentUpon>NavigationScreen.vb</DependentUpon>
     </Compile>
-    <Compile Include="Player.vb">
+    <Compile Include="NavigationScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IncomingPhoneCall.designer.vb">
+      <DependentUpon>IncomingPhoneCall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IncomingPhoneCall.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhoneCall.Designer.vb">
+      <DependentUpon>PhoneCall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PhoneCall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhoneScreen.Designer.vb">
+      <DependentUpon>PhoneScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PhoneScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsScreen.Designer.vb">
+      <DependentUpon>SettingsScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsScreen.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="SubMenu.Designer.vb">
       <DependentUpon>SubMenu.vb</DependentUpon>
@@ -125,19 +221,76 @@
     <Compile Include="SubMenu.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="TopMenu.Designer.vb">
-      <DependentUpon>TopMenu.vb</DependentUpon>
+    <Compile Include="TemperatureAndFansScreen.Designer.vb">
+      <DependentUpon>TemperatureAndFansScreen.vb</DependentUpon>
     </Compile>
-    <Compile Include="TopMenu.vb">
+    <Compile Include="TemperatureAndFansScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TemperatureSpecificRoomScreen.Designer.vb">
+      <DependentUpon>TemperatureSpecificRoomScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TemperatureSpecificRoomScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TVScreen.Designer.vb">
+      <DependentUpon>TVScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TVScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WindowsAndBlindsScreen.Designer.vb">
+      <DependentUpon>WindowsAndBlindsScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsAndBlindsScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WindowsSpecificRoomScreen.Designer.vb">
+      <DependentUpon>WindowsSpecificRoomScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsSpecificRoomScreen.vb">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Entertainment.resx">
-      <DependentUpon>Entertainment.vb</DependentUpon>
+    <EmbeddedResource Include="AudioScreen.resx">
+      <DependentUpon>AudioScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlindsSpecificRoomScreen.resx">
+      <DependentUpon>BlindsSpecificRoomScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommunicationScreen.resx">
+      <DependentUpon>CommunicationScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntertainmentScreen.resx">
+      <DependentUpon>EntertainmentScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnvironmentScreen.resx">
+      <DependentUpon>EnvironmentScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FansSpecificRoomScreen.resx">
+      <DependentUpon>FansSpecificRoomScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeScreen.resx">
+      <DependentUpon>HomeScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncomingMessage.resx">
+      <DependentUpon>IncomingMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LightsScreen.resx">
+      <DependentUpon>LightsScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LightsSpecificRoomScreen.resx">
+      <DependentUpon>LightsSpecificRoomScreen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageScreen.resx">
+      <DependentUpon>MessageScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusicScreen.resx">
+      <DependentUpon>MusicScreen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -145,18 +298,41 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Player.resx">
-      <DependentUpon>Player.vb</DependentUpon>
+    <EmbeddedResource Include="NavigationScreen.resx">
+      <DependentUpon>NavigationScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncomingPhoneCall.resx">
+      <DependentUpon>IncomingPhoneCall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhoneCall.resx">
+      <DependentUpon>PhoneCall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhoneScreen.resx">
+      <DependentUpon>PhoneScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsScreen.resx">
+      <DependentUpon>SettingsScreen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SubMenu.resx">
       <DependentUpon>SubMenu.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TopMenu.resx">
-      <DependentUpon>TopMenu.vb</DependentUpon>
+    <EmbeddedResource Include="TemperatureAndFansScreen.resx">
+      <DependentUpon>TemperatureAndFansScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TemperatureSpecificRoomScreen.resx">
+      <DependentUpon>TemperatureSpecificRoomScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TVScreen.resx">
+      <DependentUpon>TVScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsAndBlindsScreen.resx">
+      <DependentUpon>WindowsAndBlindsScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsSpecificRoomScreen.resx">
+      <DependentUpon>WindowsSpecificRoomScreen.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -184,9 +360,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\movie-theater-auditorium-540x360.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
