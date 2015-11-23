@@ -20,19 +20,37 @@
     ' This routine orders all the Submenu's buttons into an array in the order dscribed by the tabindexes of all the buttons
 
     Public Sub Initialize()
-        totalbuttons = Me.Controls.Count
-        ReDim Buttons(totalbuttons)
+        totalbuttons = 0
+        Dim maxButtons As Integer = Me.Controls.Count + MainForm.BottomBar.Controls.Count
+        ReDim Buttons(maxButtons)
         Dim index As Integer
         For Each b As Control In Me.Controls
-            index = CInt(b.TabIndex)
-            If index >= totalbuttons Then
-                MsgBox("The button labelled " & b.Text & " was not added to scanning menu because its tabindex is greater or equal to " & totalbuttons)
-            ElseIf Buttons(index) Is Nothing Then
-                Buttons(index) = b
-            Else
-                MsgBox("The button labelled " & b.Text & " was not added to scanning menu because it has the same tabindex as the button labelled " & Buttons(index).Text)
+            If TypeOf b Is Button Then
+                index = CInt(b.TabIndex)
+                If index >= maxButtons Then
+                    MsgBox("The button labelled " & b.Text & " was not added to scanning menu because its tabindex is greater or equal to " & maxButtons)
+                ElseIf Buttons(index) Is Nothing Then
+                    Buttons(index) = b
+                Else
+                    MsgBox("The button labelled " & b.Text & " was not added to scanning menu because it has the same tabindex as the button labelled " & Buttons(index).Text)
+                End If
+                totalbuttons += 1
             End If
         Next
+        For Each b As Control In MainForm.BottomBar.Controls
+            If TypeOf b Is Button Then
+                index = CInt(b.TabIndex)
+                If index >= maxButtons Then
+                    MsgBox("The button labelled " & b.Text & " was not added to scanning menu because its tabindex is greater or equal to " & maxButtons)
+                ElseIf Buttons(index) Is Nothing Then
+                    Buttons(index) = b
+                Else
+                    MsgBox("The button labelled " & b.Text & " was not added to scanning menu because it has the same tabindex as the button labelled " & Buttons(index).Text)
+                End If
+                totalbuttons += 1
+            End If
+        Next
+        ReDim Preserve Buttons(totalbuttons - 1)
     End Sub
 
 #End Region
@@ -42,7 +60,7 @@
     ' You can customize the look and feel of the outer scanning in these routines
 
     Public Sub ReceiveFocus()
-        BackColor = Color.LemonChiffon
+        BackColor = Color.CornflowerBlue
     End Sub
 
     Public Sub LoseFocus()
@@ -55,13 +73,22 @@
 #Region "Inner Scanning"
 
     Public Sub StartInnerScanning()
-        activebutton = 0
+        activebutton = 3
+
+        Do Until Buttons(activebutton).Enabled
+            activebutton = (activebutton + 1) Mod totalbuttons
+        Loop
+
         GiveFocusToButton(activebutton)
     End Sub
 
     Public Sub InnerScanningNext()
         TakeFocusFromButton(activebutton)
-        activebutton = (activebutton + 1) Mod totalbuttons
+
+        Do
+            activebutton = (activebutton + 1) Mod totalbuttons
+        Loop Until Buttons(activebutton).Enabled
+
         GiveFocusToButton(activebutton)
     End Sub
 
