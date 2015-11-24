@@ -18,7 +18,7 @@
                     NewScreen = New TemperatureSpecificRoomScreen
                 Case "FansSpecificRoomScreen"
                     NewScreen = New FansSpecificRoomScreen
-                Case "WindowsAndBlindsRoomScreen"
+                Case "WindowsAndBlindsScreen"
                     NewScreen = New WindowsAndBlindsScreen
                 Case "WindowsSpecificRoomScreen"
                     NewScreen = New WindowsSpecificRoomScreen
