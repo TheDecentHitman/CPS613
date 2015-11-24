@@ -5,6 +5,7 @@
     Private focusIsOn As Integer
     Public scanninglevel As Integer
     Public ScreenHistory As Stack
+    Public onPhone As Boolean
 
     ' TODO FOR ZACK Change scanning so BottomBar is scanned as SubMenu
 
@@ -18,6 +19,7 @@
         InitializeScanning()
         ScreenHistory = New Stack()
         setup = False
+        onPhone = False
     End Sub
 
     Public Sub ChangeScreen(OldScreen As Control, NewScreen As Control)

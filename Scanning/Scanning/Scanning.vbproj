@@ -239,6 +239,12 @@
     <Compile Include="TVScreen.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="WindowBlindOpenCloseScreen.Designer.vb">
+      <DependentUpon>WindowBlindOpenCloseScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WindowBlindOpenCloseScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="WindowsAndBlindsScreen.Designer.vb">
       <DependentUpon>WindowsAndBlindsScreen.vb</DependentUpon>
     </Compile>
@@ -324,6 +330,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TVScreen.resx">
       <DependentUpon>TVScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowBlindOpenCloseScreen.resx">
+      <DependentUpon>WindowBlindOpenCloseScreen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WindowsAndBlindsScreen.resx">
       <DependentUpon>WindowsAndBlindsScreen.vb</DependentUpon>
