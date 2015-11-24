@@ -2,8 +2,6 @@
 
     Private Sub BackButton_Click(sender As Object, e As EventArgs) Handles BackButton.Click
         If MainForm.scanninglevel = 0 Then
-            MainForm.Controls.RemoveAt(1)
-
             Dim LastScreenName As String = MainForm.ScreenHistory.Pop()
             Dim NewScreen As Control
 
@@ -38,7 +36,7 @@
                     NewScreen = New MusicScreen
                 Case "TVScreen"
                     NewScreen = New TVScreen
-                Case "CommunicationScreen"
+                Case "CommunicationsScreen"
                     NewScreen = New CommunicationsScreen
                 Case "PhoneScreen"
                     NewScreen = New PhoneScreen
