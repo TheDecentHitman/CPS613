@@ -39,7 +39,7 @@
                 Case "TVScreen"
                     NewScreen = New TVScreen
                 Case "CommunicationScreen"
-                    NewScreen = New CommunicationScreen
+                    NewScreen = New CommunicationsScreen
                 Case "PhoneScreen"
                     NewScreen = New PhoneScreen
                 Case "MessageScreen"

@@ -104,7 +104,7 @@ Partial Class MessageScreen
         Me.MessageContactListSubMenu.Location = New System.Drawing.Point(0, 72)
         Me.MessageContactListSubMenu.Name = "MessageContactListSubMenu"
         Me.MessageContactListSubMenu.Size = New System.Drawing.Size(440, 196)
-        Me.MessageContactListSubMenu.TabIndex = 7
+        Me.MessageContactListSubMenu.TabIndex = 4
         '
         'MessageContactSelectButton
         '
