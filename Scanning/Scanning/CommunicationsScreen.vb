@@ -1,4 +1,4 @@
-﻿Public Class CommunicationScreen
+﻿Public Class CommunicationsScreen
 
     Private Sub PhoneButton_Click(sender As Object, e As EventArgs) Handles PhoneButton.Click
         MainForm.ChangeScreen(Me, New PhoneScreen)

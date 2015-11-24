@@ -103,10 +103,10 @@
     <Compile Include="BottomBar.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CommunicationScreen.Designer.vb">
-      <DependentUpon>CommunicationScreen.vb</DependentUpon>
+    <Compile Include="CommunicationsScreen.Designer.vb">
+      <DependentUpon>CommunicationsScreen.vb</DependentUpon>
     </Compile>
-    <Compile Include="CommunicationScreen.vb">
+    <Compile Include="CommunicationsScreen.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="EntertainmentScreen.Designer.vb">
@@ -259,8 +259,8 @@
     <EmbeddedResource Include="BlindsSpecificRoomScreen.resx">
       <DependentUpon>BlindsSpecificRoomScreen.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CommunicationScreen.resx">
-      <DependentUpon>CommunicationScreen.vb</DependentUpon>
+    <EmbeddedResource Include="CommunicationsScreen.resx">
+      <DependentUpon>CommunicationsScreen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EntertainmentScreen.resx">
       <DependentUpon>EntertainmentScreen.vb</DependentUpon>

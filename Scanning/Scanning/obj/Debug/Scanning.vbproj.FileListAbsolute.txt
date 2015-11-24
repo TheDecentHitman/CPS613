@@ -109,6 +109,11 @@ C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\o
 C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.LightsScreen.resources
 C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.LightsSpecificRoomScreen.resources
 C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.WindowsAndBlindsScreen.resources
-C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.WindowsSpecificRoom.resources
 C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.WindowsSpecificRoomScreen.resources
 C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.NavigationScreen.resources
+C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.IncomingMessage.resources
+C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.MessageScreen.resources
+C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.IncomingPhoneCall.resources
+C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.PhoneCall.resources
+C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.PhoneScreen.resources
+C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.CommunicationsScreen.resources
