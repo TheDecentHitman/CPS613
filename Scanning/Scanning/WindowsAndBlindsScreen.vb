@@ -2,6 +2,8 @@
 
     Private Sub WindowsCentralAptButton_Click(sender As Object, e As EventArgs) Handles WindowsCentralAptButton.Click
         ' TODO
+        MainForm.ChangeScreen(Me, New WindowBlindOpenCloseScreen)
+
     End Sub
 
     Private Sub WindowsSpecRoomButton_Click(sender As Object, e As EventArgs) Handles WindowsSpecRoomButton.Click
@@ -10,6 +12,8 @@
 
     Private Sub BlindsCentralAptButton_Click(sender As Object, e As EventArgs) Handles BlindsCentralAptButton.Click
         ' TODO
+        MainForm.ChangeScreen(Me, New WindowBlindOpenCloseScreen)
+
     End Sub
 
     Private Sub BlindsSpecRoomButton_Click(sender As Object, e As EventArgs) Handles BlindsSpecRoomButton.Click

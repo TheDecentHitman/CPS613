@@ -117,3 +117,37 @@ C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\o
 C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.PhoneCall.resources
 C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.PhoneScreen.resources
 C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.CommunicationsScreen.resources
+H:\cps613\Scanning\Scanning\bin\Debug\Scanning.exe.config
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.exe
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.xml
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.pdb
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.AudioScreen.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.BlindsSpecificRoomScreen.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.CommunicationsScreen.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.EntertainmentScreen.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.EnvironmentScreen.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.FansSpecificRoomScreen.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.HomeScreen.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.IncomingMessage.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.LightsScreen.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.LightsSpecificRoomScreen.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.MainForm.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.MessageScreen.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.MusicScreen.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.Resources.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.NavigationScreen.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.IncomingPhoneCall.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.PhoneCall.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.PhoneScreen.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.SettingsScreen.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.SubMenu.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.TemperatureAndFansScreen.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.TemperatureSpecificRoomScreen.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.TVScreen.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.WindowsAndBlindsScreen.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.WindowsSpecificRoomScreen.resources
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.vbproj.GenerateResource.Cache
+H:\cps613\Scanning\Scanning\bin\Debug\Scanning.exe
+H:\cps613\Scanning\Scanning\bin\Debug\Scanning.pdb
+H:\cps613\Scanning\Scanning\bin\Debug\Scanning.xml
+H:\cps613\Scanning\Scanning\obj\Debug\Scanning.WindowBlindOpenCloseScreen.resources
