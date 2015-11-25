@@ -8,8 +8,6 @@
     Public ScreenHistory As Stack
     Public onPhone As Boolean
 
-    ' TODO FOR ZACK Change scanning so BottomBar is scanned as SubMenu
-
     Public Sub New()
 
         ' This call is required by the designer.

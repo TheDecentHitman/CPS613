@@ -3,7 +3,7 @@
 Public Class AudioScreen
     Private SelectedSortButton As Button
 
-    Private Sub AudioScreen_Load(sender As Object, e As EventArgs) Handles Me.ControlAdded
+    Private Sub AudioScreen_ControlAdded(sender As Object, e As EventArgs) Handles Me.ControlAdded
         AudioRadioSortButton_Click(Nothing, Nothing)
     End Sub
 
@@ -68,11 +68,15 @@ Public Class AudioScreen
         End If
     End Sub
 
-    Private Sub AudioSelectButton_Click(sender As Object, e As EventArgs) Handles AudioSelectButton.Click, AudioPlayPauseButton.Click
+    Private Sub AudioSelectButton_Click(sender As Object, e As EventArgs) Handles AudioSelectButton.Click
         My.Computer.Audio.Play(My.Computer.FileSystem.GetFiles("../../Resources/Audio", FileIO.SearchOption.SearchAllSubDirectories, "*" + AudioListBox.Items(AudioListBox.SelectedIndex) + "*").First())
     End Sub
 
     Private Sub AudioDeleteButton_Click(sender As Object, e As EventArgs) Handles AudioDeleteButton.Click
         ' TODO Confirm deletion
+    End Sub
+
+    Private Sub AudioPlayPauseButton_Click(sender As Object, e As EventArgs) Handles AudioPlayPauseButton.Click
+        ' TODO
     End Sub
 End Class
