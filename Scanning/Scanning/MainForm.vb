@@ -46,6 +46,10 @@
     End Sub
 
     Public Sub IncomingPhoneCall()
+        StopScanning()
+
+        Me.ChangeScreen(Me, New incomecall)
+        StartScanning()
         ' TODO Stop scanning, create IncomingPhoneCall form, start scanning IncomingPhoneCall form
     End Sub
 

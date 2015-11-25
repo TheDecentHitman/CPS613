@@ -29,6 +29,8 @@
     End Sub
 
     Private Sub PhoneContactCallButton_Click(sender As Object, e As EventArgs) Handles PhoneContactCallButton.Click
+        MainForm.ChangeScreen(Me, New HomeScreen)
+        MainForm.IncomingPhoneCall()
         ' TODO Stop scanning, create PhoneCall form, start scanning PhoneCall form
     End Sub
 End Class

@@ -145,6 +145,12 @@
     <Compile Include="HomeScreen.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="incomecall.Designer.vb">
+      <DependentUpon>incomecall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="incomecall.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="IncomingMessage.Designer.vb">
       <DependentUpon>IncomingMessage.vb</DependentUpon>
     </Compile>
@@ -214,6 +220,12 @@
     </Compile>
     <Compile Include="PhoneCall.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="phonecall1.Designer.vb">
+      <DependentUpon>phonecall1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="phonecall1.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="PhoneScreen.Designer.vb">
       <DependentUpon>PhoneScreen.vb</DependentUpon>
@@ -301,6 +313,9 @@
     <EmbeddedResource Include="HomeScreen.resx">
       <DependentUpon>HomeScreen.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="incomecall.resx">
+      <DependentUpon>incomecall.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IncomingMessage.resx">
       <DependentUpon>IncomingMessage.vb</DependentUpon>
     </EmbeddedResource>
@@ -333,6 +348,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PhoneCall.resx">
       <DependentUpon>PhoneCall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="phonecall1.resx">
+      <DependentUpon>phonecall1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PhoneScreen.resx">
       <DependentUpon>PhoneScreen.vb</DependentUpon>

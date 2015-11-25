@@ -14,7 +14,7 @@
 
     Private Sub CommunicationsButton_Click(sender As Object, e As EventArgs) Handles CommunicationsButton.Click
         If MainForm.onPhone Then
-            PhoneCall.Show()
+            MainForm.ChangeScreen(Me, New phonecall1)
         Else
             MainForm.ChangeScreen(Me, New CommunicationsScreen)
         End If
