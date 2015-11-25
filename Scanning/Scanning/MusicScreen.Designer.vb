@@ -33,10 +33,15 @@ Partial Class MusicScreen
         Me.MusicRewindButton = New System.Windows.Forms.Button()
         Me.MusicPlayPauseButton = New System.Windows.Forms.Button()
         Me.MusicListSubMenu = New Scanning.SubMenu()
+        Me.MusicSelectButton = New System.Windows.Forms.Button()
+        Me.MusicDownButton = New System.Windows.Forms.Button()
+        Me.MusicUpButton = New System.Windows.Forms.Button()
+        Me.MusicListBox = New System.Windows.Forms.ListBox()
         Me.MusicSortSubMenu = New Scanning.SubMenu()
         Me.ArtistsMusicSortButton = New System.Windows.Forms.Button()
         Me.MusicPlayerSubMenu2.SuspendLayout()
         Me.MusicPlayerSubMenu.SuspendLayout()
+        Me.MusicListSubMenu.SuspendLayout()
         Me.MusicSortSubMenu.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -145,10 +150,49 @@ Partial Class MusicScreen
         'MusicListSubMenu
         '
         Me.MusicListSubMenu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.MusicListSubMenu.Controls.Add(Me.MusicSelectButton)
+        Me.MusicListSubMenu.Controls.Add(Me.MusicDownButton)
+        Me.MusicListSubMenu.Controls.Add(Me.MusicUpButton)
+        Me.MusicListSubMenu.Controls.Add(Me.MusicListBox)
         Me.MusicListSubMenu.Location = New System.Drawing.Point(4, 67)
         Me.MusicListSubMenu.Name = "MusicListSubMenu"
         Me.MusicListSubMenu.Size = New System.Drawing.Size(433, 255)
         Me.MusicListSubMenu.TabIndex = 4
+        '
+        'MusicSelectButton
+        '
+        Me.MusicSelectButton.Location = New System.Drawing.Point(348, 176)
+        Me.MusicSelectButton.Name = "MusicSelectButton"
+        Me.MusicSelectButton.Size = New System.Drawing.Size(75, 50)
+        Me.MusicSelectButton.TabIndex = 5
+        Me.MusicSelectButton.Text = "Select"
+        Me.MusicSelectButton.UseVisualStyleBackColor = True
+        '
+        'MusicDownButton
+        '
+        Me.MusicDownButton.Location = New System.Drawing.Point(348, 100)
+        Me.MusicDownButton.Name = "MusicDownButton"
+        Me.MusicDownButton.Size = New System.Drawing.Size(75, 50)
+        Me.MusicDownButton.TabIndex = 4
+        Me.MusicDownButton.Text = "Down"
+        Me.MusicDownButton.UseVisualStyleBackColor = True
+        '
+        'MusicUpButton
+        '
+        Me.MusicUpButton.Location = New System.Drawing.Point(348, 24)
+        Me.MusicUpButton.Name = "MusicUpButton"
+        Me.MusicUpButton.Size = New System.Drawing.Size(75, 50)
+        Me.MusicUpButton.TabIndex = 3
+        Me.MusicUpButton.Text = "Up"
+        Me.MusicUpButton.UseVisualStyleBackColor = True
+        '
+        'MusicListBox
+        '
+        Me.MusicListBox.FormattingEnabled = True
+        Me.MusicListBox.Location = New System.Drawing.Point(5, 6)
+        Me.MusicListBox.Name = "MusicListBox"
+        Me.MusicListBox.Size = New System.Drawing.Size(330, 238)
+        Me.MusicListBox.TabIndex = 7
         '
         'MusicSortSubMenu
         '
@@ -181,6 +225,7 @@ Partial Class MusicScreen
         Me.Size = New System.Drawing.Size(440, 440)
         Me.MusicPlayerSubMenu2.ResumeLayout(False)
         Me.MusicPlayerSubMenu.ResumeLayout(False)
+        Me.MusicListSubMenu.ResumeLayout(False)
         Me.MusicSortSubMenu.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -198,5 +243,9 @@ Partial Class MusicScreen
     Friend WithEvents MusicListSubMenu As Scanning.SubMenu
     Friend WithEvents MusicSortSubMenu As Scanning.SubMenu
     Friend WithEvents ArtistsMusicSortButton As System.Windows.Forms.Button
+    Friend WithEvents MusicSelectButton As System.Windows.Forms.Button
+    Friend WithEvents MusicDownButton As System.Windows.Forms.Button
+    Friend WithEvents MusicUpButton As System.Windows.Forms.Button
+    Friend WithEvents MusicListBox As System.Windows.Forms.ListBox
 
 End Class
