@@ -7,6 +7,9 @@
     Public scanninglevel As Integer
     Public ScreenHistory As Stack
     Public onPhone As Boolean
+    Public lightsOn As Boolean() = {False, False, False}
+    Public windowsOpen As Boolean() = {False, False, False}
+    Public blindsOpen As Boolean() = {False, False, False}
 
     Public Sub New()
 
