@@ -8,7 +8,7 @@
             Select Case LastScreenName
                 Case "HomeScreen"
                     NewScreen = New HomeScreen
-                Case "NavegationScreen"
+                Case "NavigationScreen"
                     NewScreen = New NavigationScreen
                 Case "DoorsScreen"
                     NewScreen = New DoorsScreen
@@ -20,8 +20,12 @@
                     NewScreen = New TemperatureAndFansScreen
                 Case "TemperatureSpecificRoomScreen"
                     NewScreen = New TemperatureSpecificRoomScreen
+                Case "Heaters"
+                    NewScreen = New Heaters
                 Case "FansSpecificRoomScreen"
                     NewScreen = New FansSpecificRoomScreen
+                Case "Fans"
+                    NewScreen = New Fans
                 Case "WindowsAndBlindsScreen"
                     NewScreen = New WindowsAndBlindsScreen
                 Case "WindowsSpecificRoomScreen"
@@ -46,6 +50,10 @@
                     NewScreen = New CommunicationsScreen
                 Case "PhoneScreen"
                     NewScreen = New PhoneScreen
+                Case "phonecall1"
+                    NewScreen = New phonecall1
+                Case "incomecall"
+                    NewScreen = New incomecall
                 Case "MessageScreen"
                     NewScreen = New MessageScreen
                 Case "SettingsScreen"

@@ -37,7 +37,7 @@ Partial Class incomecall
         Me.DeclineAndMessageButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.DeclineAndMessageButton.Name = "DeclineAndMessageButton"
         Me.DeclineAndMessageButton.Size = New System.Drawing.Size(105, 83)
-        Me.DeclineAndMessageButton.TabIndex = 3
+        Me.DeclineAndMessageButton.TabIndex = 5
         Me.DeclineAndMessageButton.Text = "Decline and Message"
         Me.DeclineAndMessageButton.UseVisualStyleBackColor = True
         '
@@ -71,7 +71,7 @@ Partial Class incomecall
         Me.AcceptButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.AcceptButton.Name = "AcceptButton"
         Me.AcceptButton.Size = New System.Drawing.Size(105, 83)
-        Me.AcceptButton.TabIndex = 5
+        Me.AcceptButton.TabIndex = 3
         Me.AcceptButton.Text = "Accept"
         Me.AcceptButton.UseVisualStyleBackColor = True
         '
