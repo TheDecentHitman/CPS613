@@ -2,7 +2,8 @@
     Private setup As Boolean = True
     Private totalcontrols As Integer
     Private SelectableControls As Control()
-    Private focusIsOn As Integer
+    Public bottomBarActive = False
+    Public focusIsOn As Integer
     Public scanninglevel As Integer
     Public ScreenHistory As Stack
     Public onPhone As Boolean
@@ -23,11 +24,20 @@
     End Sub
 
     Public Sub ChangeScreen(OldScreen As Control, NewScreen As Control)
+        bottomBarActive = False
+        focusIsOn = 3
+
         If Not IsNothing(OldScreen) Then
             ScreenHistory.Push(OldScreen.Name)
         End If
 
-        Me.Controls.RemoveAt(1)
+        For Each C As Control In Me.Controls
+            If Not (TypeOf C Is Label OrElse TypeOf C Is BottomBar) Then
+                Me.Controls.Remove(C)
+                Exit For
+            End If
+        Next
+
         NewScreen.Location = New Point(47, 87)
         Me.Controls.Add(NewScreen)
     End Sub
@@ -46,7 +56,19 @@
         For Each Control In Me.Controls
             For Each SubControl In Control.Controls
                 ReDim Preserve SelectableControls(SelectableControls.Length + Control.Controls.Count)
-                If TypeOf SubControl Is Button OrElse TypeOf SubControl Is SubMenu Then
+                If TypeOf SubControl Is Button OrElse (TypeOf SubControl Is SubMenu AndAlso SubControl.Name <> "BottomBarSubMenu") Then
+                    If SubControl.tabIndex >= SelectableControls.Length Then
+                        ReDim Preserve SelectableControls(SubControl.tabIndex)
+                    End If
+                    SelectableControls(SubControl.tabIndex) = SubControl
+                    totalcontrols += 1
+                End If
+            Next
+        Next
+        For Each Control In BottomBar.Controls
+            For Each SubControl In Control.Controls
+                ReDim Preserve SelectableControls(SelectableControls.Length + Control.Controls.Count)
+                If TypeOf SubControl Is Button Then
                     If SubControl.tabIndex >= SelectableControls.Length Then
                         ReDim Preserve SelectableControls(SubControl.tabIndex)
                     End If
@@ -71,7 +93,7 @@
     ' Start scanning on the first submenu
     Public Sub StartScanning()
         scanninglevel = 0
-        focusIsOn = BottomBar.Controls.Count
+        focusIsOn = 3
 
         If TypeOf SelectableControls(focusIsOn) Is Button Then
             CType(SelectableControls(focusIsOn), Button).FlatStyle = FlatStyle.System
@@ -110,9 +132,11 @@
     End Sub
 
     ' When the timer goes off, scan to next submenu
-    Private Sub Timer_Tick(sender As Object, e As EventArgs) Handles ScanningTimer.Tick
+    Public Sub Timer_Tick(sender As Object, e As EventArgs) Handles ScanningTimer.Tick
         If scanninglevel = 0 Then
-            If TypeOf SelectableControls(focusIsOn) Is Button Then
+            If (Not bottomBarActive) AndAlso focusIsOn = 2 Then
+                BottomBar.BackColor = DefaultBackColor
+            ElseIf TypeOf SelectableControls(focusIsOn) Is Button Then
                 CType(SelectableControls(focusIsOn), Button).FlatStyle = FlatStyle.System
                 Me.Focus()
             Else
@@ -121,9 +145,12 @@
 
             Do
                 focusIsOn = (focusIsOn + 1) Mod totalcontrols
-            Loop Until SelectableControls(focusIsOn).Enabled
+            Loop Until (bottomBarActive OrElse (focusIsOn <> 0 AndAlso focusIsOn <> 1)) AndAlso SelectableControls(focusIsOn).Enabled
 
-            If TypeOf SelectableControls(focusIsOn) Is Button Then
+            If (Not bottomBarActive) AndAlso focusIsOn = 2 Then
+                BottomBar.BackColor = Color.LightBlue
+                FocusLabel.Focus()
+            ElseIf TypeOf SelectableControls(focusIsOn) Is Button Then
                 CType(SelectableControls(focusIsOn), Button).FlatStyle = FlatStyle.Standard
                 CType(SelectableControls(focusIsOn), Button).Focus()
             Else
@@ -143,11 +170,16 @@
                 BottomBar.BackButton.Enabled = False
             End If
 
-            If TypeOf Controls(1) Is HomeScreen Then
-                BottomBar.HomeButton.Enabled = False
-            Else
-                BottomBar.HomeButton.Enabled = True
-            End If
+            For Each C As Control In Me.Controls
+                If Not (TypeOf C Is Label OrElse TypeOf C Is BottomBar) Then
+                    If TypeOf C Is HomeScreen Then
+                        BottomBar.HomeButton.Enabled = False
+                    Else
+                        BottomBar.HomeButton.Enabled = True
+                    End If
+                    Exit For
+                End If
+            Next
 
             InitializeScanning()
         End If
@@ -155,7 +187,18 @@
 
     ' When the user selects a submenu, start scanning within that submenu
     Private Sub Me_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Me.KeyPress
-        If scanninglevel = 0 AndAlso TypeOf SelectableControls(focusIsOn) Is SubMenu Then
+        If (Not bottomBarActive) AndAlso BottomBar.BackColor = Color.LightBlue Then
+            bottomBarActive = True
+            BottomBar.BackColor = DefaultBackColor
+
+            If TypeOf SelectableControls(focusIsOn) Is SubMenu Then
+                Dim activeSubMenu As SubMenu = SelectableControls(focusIsOn)
+                activeSubMenu.ResetScanning()
+            Else
+                focusIsOn = totalcontrols - 1
+            End If
+            Timer_Tick(Nothing, Nothing)
+        ElseIf scanninglevel = 0 AndAlso TypeOf SelectableControls(focusIsOn) Is SubMenu Then
             scanninglevel = 1
             CType(SelectableControls(focusIsOn), SubMenu).StartInnerScanning()
         End If
