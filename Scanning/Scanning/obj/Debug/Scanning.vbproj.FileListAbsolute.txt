@@ -155,3 +155,36 @@ C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\o
 C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.BottomBar.resources
 C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.ElevatorScreen.resources
 C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.DoorsScreen.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\bin\Debug\Scanning.exe
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\bin\Debug\Scanning.pdb
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\bin\Debug\Scanning.xml
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.AudioScreen.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.BlindsSpecificRoomScreen.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.BottomBar.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.CommunicationsScreen.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.DoorsScreen.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.ElevatorScreen.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.EntertainmentScreen.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.EnvironmentScreen.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.FansSpecificRoomScreen.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.HomeScreen.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.IncomingMessage.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.LightsScreen.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.LightsSpecificRoomScreen.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.MainForm.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.MessageScreen.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.MusicScreen.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.Resources.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.NavigationScreen.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.IncomingPhoneCall.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.PhoneCall.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.PhoneScreen.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.SettingsScreen.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.SubMenu.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.TemperatureAndFansScreen.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.TemperatureSpecificRoomScreen.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.TVScreen.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.WindowBlindOpenCloseScreen.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.WindowsAndBlindsScreen.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.WindowsSpecificRoomScreen.resources
+C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.vbproj.GenerateResource.Cache
