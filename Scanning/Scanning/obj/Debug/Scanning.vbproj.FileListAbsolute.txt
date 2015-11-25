@@ -153,3 +153,5 @@ H:\cps613\Scanning\Scanning\bin\Debug\Scanning.xml
 H:\cps613\Scanning\Scanning\obj\Debug\Scanning.WindowBlindOpenCloseScreen.resources
 C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.WindowBlindOpenCloseScreen.resources
 C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.BottomBar.resources
+C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.ElevatorScreen.resources
+C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.DoorsScreen.resources

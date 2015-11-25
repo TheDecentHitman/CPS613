@@ -1,7 +1,7 @@
 ﻿Public Class MainForm
     Private setup As Boolean = True
     Private totalcontrols As Integer
-    Private SelectableControls As Control()
+    Public SelectableControls As Control()
     Public bottomBarActive = False
     Public focusIsOn As Integer
     Public scanninglevel As Integer
@@ -38,6 +38,8 @@
 
         NewScreen.Location = New Point(47, 87)
         Me.Controls.Add(NewScreen)
+        ScanningTimer.Enabled = False
+        ScanningTimer.Enabled = True
     End Sub
 
     Public Sub IncomingPhoneCall()

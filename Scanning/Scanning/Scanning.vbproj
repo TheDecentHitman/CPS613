@@ -109,6 +109,18 @@
     <Compile Include="CommunicationsScreen.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="DoorsScreen.Designer.vb">
+      <DependentUpon>DoorsScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DoorsScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ElevatorScreen.Designer.vb">
+      <DependentUpon>ElevatorScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ElevatorScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="EntertainmentScreen.Designer.vb">
       <DependentUpon>EntertainmentScreen.vb</DependentUpon>
     </Compile>
@@ -270,6 +282,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CommunicationsScreen.resx">
       <DependentUpon>CommunicationsScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoorsScreen.resx">
+      <DependentUpon>DoorsScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElevatorScreen.resx">
+      <DependentUpon>ElevatorScreen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EntertainmentScreen.resx">
       <DependentUpon>EntertainmentScreen.vb</DependentUpon>

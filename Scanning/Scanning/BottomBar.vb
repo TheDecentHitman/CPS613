@@ -10,6 +10,10 @@
                     NewScreen = New HomeScreen
                 Case "NavegationScreen"
                     NewScreen = New NavigationScreen
+                Case "DoorsScreen"
+                    NewScreen = New DoorsScreen
+                Case "ElevatorScreen"
+                    NewScreen = New ElevatorScreen
                 Case "EnvironmentScreen"
                     NewScreen = New EnvironmentScreen
                 Case "TemperatureAndFansScreen"
@@ -54,6 +58,7 @@
                 MainForm.ChangeScreen(Nothing, NewScreen)
             End If
         Else
+            MainForm.SelectableControls(MainForm.focusIsOn).BackColor = DefaultBackColor
             MainForm.scanninglevel = 0
             MainForm.bottomBarActive = False
             MainForm.FocusLabel.Focus()
