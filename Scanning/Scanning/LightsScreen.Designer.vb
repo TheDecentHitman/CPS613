@@ -61,13 +61,15 @@ Partial Class LightsScreen
         '
         'LightsCentralAptButton
         '
+        Me.LightsCentralAptButton.BackColor = System.Drawing.SystemColors.Control
         Me.LightsCentralAptButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LightsCentralAptButton.ForeColor = System.Drawing.SystemColors.ControlText
         Me.LightsCentralAptButton.Location = New System.Drawing.Point(6, 17)
         Me.LightsCentralAptButton.Name = "LightsCentralAptButton"
         Me.LightsCentralAptButton.Size = New System.Drawing.Size(200, 120)
         Me.LightsCentralAptButton.TabIndex = 3
         Me.LightsCentralAptButton.Text = "Central Apartment"
-        Me.LightsCentralAptButton.UseVisualStyleBackColor = True
+        Me.LightsCentralAptButton.UseVisualStyleBackColor = False
         '
         'LightsScreen
         '
