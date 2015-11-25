@@ -30,9 +30,10 @@ Partial Class FansSpecificRoomScreen
         'FansSpecRoom_BedroomButton
         '
         Me.FansSpecRoom_BedroomButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FansSpecRoom_BedroomButton.Location = New System.Drawing.Point(69, 295)
+        Me.FansSpecRoom_BedroomButton.Location = New System.Drawing.Point(104, 454)
+        Me.FansSpecRoom_BedroomButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.FansSpecRoom_BedroomButton.Name = "FansSpecRoom_BedroomButton"
-        Me.FansSpecRoom_BedroomButton.Size = New System.Drawing.Size(303, 115)
+        Me.FansSpecRoom_BedroomButton.Size = New System.Drawing.Size(454, 177)
         Me.FansSpecRoom_BedroomButton.TabIndex = 5
         Me.FansSpecRoom_BedroomButton.Text = "Bedroom"
         Me.FansSpecRoom_BedroomButton.UseVisualStyleBackColor = True
@@ -40,9 +41,10 @@ Partial Class FansSpecificRoomScreen
         'FansSpecRoom_KitchenButton
         '
         Me.FansSpecRoom_KitchenButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FansSpecRoom_KitchenButton.Location = New System.Drawing.Point(69, 163)
+        Me.FansSpecRoom_KitchenButton.Location = New System.Drawing.Point(104, 251)
+        Me.FansSpecRoom_KitchenButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.FansSpecRoom_KitchenButton.Name = "FansSpecRoom_KitchenButton"
-        Me.FansSpecRoom_KitchenButton.Size = New System.Drawing.Size(303, 115)
+        Me.FansSpecRoom_KitchenButton.Size = New System.Drawing.Size(454, 177)
         Me.FansSpecRoom_KitchenButton.TabIndex = 4
         Me.FansSpecRoom_KitchenButton.Text = "Kitchen"
         Me.FansSpecRoom_KitchenButton.UseVisualStyleBackColor = True
@@ -50,22 +52,24 @@ Partial Class FansSpecificRoomScreen
         'FansSpecRoom_LivingRoomButton
         '
         Me.FansSpecRoom_LivingRoomButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FansSpecRoom_LivingRoomButton.Location = New System.Drawing.Point(69, 31)
+        Me.FansSpecRoom_LivingRoomButton.Location = New System.Drawing.Point(104, 48)
+        Me.FansSpecRoom_LivingRoomButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.FansSpecRoom_LivingRoomButton.Name = "FansSpecRoom_LivingRoomButton"
-        Me.FansSpecRoom_LivingRoomButton.Size = New System.Drawing.Size(303, 115)
+        Me.FansSpecRoom_LivingRoomButton.Size = New System.Drawing.Size(454, 177)
         Me.FansSpecRoom_LivingRoomButton.TabIndex = 3
         Me.FansSpecRoom_LivingRoomButton.Text = "Living Room"
         Me.FansSpecRoom_LivingRoomButton.UseVisualStyleBackColor = True
         '
         'FansSpecificRoomScreen
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.FansSpecRoom_BedroomButton)
         Me.Controls.Add(Me.FansSpecRoom_KitchenButton)
         Me.Controls.Add(Me.FansSpecRoom_LivingRoomButton)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "FansSpecificRoomScreen"
-        Me.Size = New System.Drawing.Size(440, 440)
+        Me.Size = New System.Drawing.Size(660, 677)
         Me.ResumeLayout(False)
 
     End Sub

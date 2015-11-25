@@ -228,3 +228,5 @@ C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.Wi
 C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.WindowsSpecificRoomScreen.resources
 C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.vbproj.GenerateResource.Cache
 C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.phonecall1.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.Fans.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.Heaters.resources

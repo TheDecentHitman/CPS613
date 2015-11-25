@@ -10,6 +10,8 @@
     Public lightsOn As Boolean() = {False, False, False}
     Public windowsOpen As Boolean() = {False, False, False}
     Public blindsOpen As Boolean() = {False, False, False}
+    Public temperature As Integer = 23
+
 
     Public Sub New()
 

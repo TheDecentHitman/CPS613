@@ -31,7 +31,7 @@ Partial Class phonecall1
         '
         'HangUpButton
         '
-        Me.HangUpButton.Location = New System.Drawing.Point(288, 234)
+        Me.HangUpButton.Location = New System.Drawing.Point(403, 402)
         Me.HangUpButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.HangUpButton.Name = "HangUpButton"
         Me.HangUpButton.Size = New System.Drawing.Size(112, 83)
@@ -42,7 +42,7 @@ Partial Class phonecall1
         'TypeVoiceMessageButton
         '
         Me.TypeVoiceMessageButton.Enabled = False
-        Me.TypeVoiceMessageButton.Location = New System.Drawing.Point(166, 234)
+        Me.TypeVoiceMessageButton.Location = New System.Drawing.Point(281, 402)
         Me.TypeVoiceMessageButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TypeVoiceMessageButton.Name = "TypeVoiceMessageButton"
         Me.TypeVoiceMessageButton.Size = New System.Drawing.Size(112, 83)
@@ -52,7 +52,7 @@ Partial Class phonecall1
         '
         'StandardVoiceMessagetton
         '
-        Me.StandardVoiceMessagetton.Location = New System.Drawing.Point(44, 234)
+        Me.StandardVoiceMessagetton.Location = New System.Drawing.Point(159, 402)
         Me.StandardVoiceMessagetton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.StandardVoiceMessagetton.Name = "StandardVoiceMessagetton"
         Me.StandardVoiceMessagetton.Size = New System.Drawing.Size(112, 83)
@@ -62,10 +62,11 @@ Partial Class phonecall1
         '
         'CallerPictureBox
         '
-        Me.CallerPictureBox.Location = New System.Drawing.Point(144, 70)
+        Me.CallerPictureBox.Location = New System.Drawing.Point(259, 238)
         Me.CallerPictureBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CallerPictureBox.Name = "CallerPictureBox"
         Me.CallerPictureBox.Size = New System.Drawing.Size(150, 154)
+        Me.CallerPictureBox.TabIndex = 6
         Me.CallerPictureBox.TabStop = False
         '
         'phonecall1
@@ -77,7 +78,7 @@ Partial Class phonecall1
         Me.Controls.Add(Me.StandardVoiceMessagetton)
         Me.Controls.Add(Me.CallerPictureBox)
         Me.Name = "phonecall1"
-        Me.Size = New System.Drawing.Size(440, 440)
+        Me.Size = New System.Drawing.Size(660, 677)
         CType(Me.CallerPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

@@ -133,10 +133,22 @@
     <Compile Include="EnvironmentScreen.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Fans.Designer.vb">
+      <DependentUpon>Fans.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fans.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="FansSpecificRoomScreen.Designer.vb">
       <DependentUpon>FansSpecificRoomScreen.vb</DependentUpon>
     </Compile>
     <Compile Include="FansSpecificRoomScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Heaters.Designer.vb">
+      <DependentUpon>Heaters.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Heaters.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="HomeScreen.Designer.vb">
@@ -307,8 +319,14 @@
     <EmbeddedResource Include="EnvironmentScreen.resx">
       <DependentUpon>EnvironmentScreen.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Fans.resx">
+      <DependentUpon>Fans.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FansSpecificRoomScreen.resx">
       <DependentUpon>FansSpecificRoomScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Heaters.resx">
+      <DependentUpon>Heaters.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomeScreen.resx">
       <DependentUpon>HomeScreen.vb</DependentUpon>
