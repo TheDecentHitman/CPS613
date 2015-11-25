@@ -11,7 +11,7 @@
     Public windowsOpen As Boolean() = {False, False, False}
     Public blindsOpen As Boolean() = {False, False, False}
     Public temperature As Integer = 23
-
+    Public currentFloor As Integer = 3
 
     Public Sub New()
 
