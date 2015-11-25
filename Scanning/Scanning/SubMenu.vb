@@ -11,7 +11,7 @@
 
     Private totalbuttons As Integer
     Private Buttons As Button()
-    Private activebutton As Integer
+    Public activebutton As Integer
 
 #End Region
 
@@ -21,15 +21,16 @@
 
     Public Sub Initialize()
         totalbuttons = 0
-        Dim maxButtons As Integer = Me.Controls.Count + MainForm.BottomBar.Controls.Count
-        ReDim Buttons(maxButtons)
+        ReDim Buttons(2)
         Dim index As Integer
         For Each b As Control In Me.Controls
             If TypeOf b Is Button Then
                 index = CInt(b.TabIndex)
-                If index >= maxButtons Then
-                    MsgBox("The button labelled " & b.Text & " was not added to scanning menu because its tabindex is greater or equal to " & maxButtons)
-                ElseIf Buttons(index) Is Nothing Then
+                If index >= Buttons.Count Then
+                    ReDim Preserve Buttons(index)
+                End If
+
+                If Buttons(index) Is Nothing Then
                     Buttons(index) = b
                 Else
                     MsgBox("The button labelled " & b.Text & " was not added to scanning menu because it has the same tabindex as the button labelled " & Buttons(index).Text)
@@ -40,9 +41,11 @@
         For Each b As Control In MainForm.BottomBar.Controls
             If TypeOf b Is Button Then
                 index = CInt(b.TabIndex)
-                If index >= maxButtons Then
-                    MsgBox("The button labelled " & b.Text & " was not added to scanning menu because its tabindex is greater or equal to " & maxButtons)
-                ElseIf Buttons(index) Is Nothing Then
+                If index >= Buttons.Count Then
+                    ReDim Preserve Buttons(index)
+                End If
+
+                If Buttons(index) Is Nothing Then
                     Buttons(index) = b
                 Else
                     MsgBox("The button labelled " & b.Text & " was not added to scanning menu because it has the same tabindex as the button labelled " & Buttons(index).Text)
@@ -50,7 +53,6 @@
                 totalbuttons += 1
             End If
         Next
-        ReDim Preserve Buttons(totalbuttons - 1)
     End Sub
 
 #End Region
@@ -60,7 +62,7 @@
     ' You can customize the look and feel of the outer scanning in these routines
 
     Public Sub ReceiveFocus()
-        BackColor = Color.CornflowerBlue
+        BackColor = Color.LightBlue
     End Sub
 
     Public Sub LoseFocus()
@@ -75,7 +77,7 @@
     Public Sub StartInnerScanning()
         activebutton = 3
 
-        Do Until Buttons(activebutton).Enabled
+        Do Until (MainForm.bottomBarActive OrElse (activebutton <> 0 AndAlso activebutton <> 1)) AndAlso Buttons(activebutton).Enabled
             activebutton = (activebutton + 1) Mod totalbuttons
         Loop
 
@@ -87,21 +89,35 @@
 
         Do
             activebutton = (activebutton + 1) Mod totalbuttons
-        Loop Until Buttons(activebutton).Enabled
+        Loop Until (MainForm.bottomBarActive OrElse (activebutton <> 0 AndAlso activebutton <> 1)) AndAlso Buttons(activebutton).Enabled
 
         GiveFocusToButton(activebutton)
     End Sub
 
     ' You can customize the look and feel of the inner scanning in these two routines
     Private Sub TakeFocusFromButton(index As Integer)
-        Buttons(index).FlatStyle = FlatStyle.System
+        MainForm.FocusLabel.Focus()
+
+        If MainForm.bottomBarActive OrElse index <> 2 Then
+            Buttons(index).FlatStyle = FlatStyle.System
+        Else
+            MainForm.BottomBar.BackColor = DefaultBackColor
+        End If
     End Sub
 
     Private Sub GiveFocusToButton(index As Integer)
-        Buttons(index).FlatStyle = FlatStyle.Standard
-        Buttons(index).Focus()
+        If MainForm.bottomBarActive OrElse index <> 2 Then
+            Buttons(index).FlatStyle = FlatStyle.Standard
+            Buttons(index).Focus()
+        Else
+            MainForm.BottomBar.BackColor = Color.LightBlue
+        End If
     End Sub
 
 #End Region
+
+    Public Sub ResetScanning()
+        activebutton = totalbuttons - 1
+    End Sub
 
 End Class

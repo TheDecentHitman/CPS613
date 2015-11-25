@@ -22,17 +22,26 @@ Partial Class BottomBar
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.SettingsButton = New System.Windows.Forms.Button()
         Me.HomeButton = New System.Windows.Forms.Button()
         Me.BackButton = New System.Windows.Forms.Button()
-        Me.SettingsButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
+        '
+        'SettingsButton
+        '
+        Me.SettingsButton.Location = New System.Drawing.Point(295, 2)
+        Me.SettingsButton.Name = "SettingsButton"
+        Me.SettingsButton.Size = New System.Drawing.Size(140, 120)
+        Me.SettingsButton.TabIndex = 2
+        Me.SettingsButton.Text = "Settings"
+        Me.SettingsButton.UseVisualStyleBackColor = True
         '
         'HomeButton
         '
         Me.HomeButton.Enabled = False
-        Me.HomeButton.Location = New System.Drawing.Point(148, 0)
+        Me.HomeButton.Location = New System.Drawing.Point(151, 2)
         Me.HomeButton.Name = "HomeButton"
-        Me.HomeButton.Size = New System.Drawing.Size(145, 125)
+        Me.HomeButton.Size = New System.Drawing.Size(140, 120)
         Me.HomeButton.TabIndex = 1
         Me.HomeButton.Text = "Home"
         Me.HomeButton.UseVisualStyleBackColor = True
@@ -40,21 +49,12 @@ Partial Class BottomBar
         'BackButton
         '
         Me.BackButton.Enabled = False
-        Me.BackButton.Location = New System.Drawing.Point(3, 0)
+        Me.BackButton.Location = New System.Drawing.Point(6, 2)
         Me.BackButton.Name = "BackButton"
-        Me.BackButton.Size = New System.Drawing.Size(145, 125)
+        Me.BackButton.Size = New System.Drawing.Size(140, 120)
         Me.BackButton.TabIndex = 0
         Me.BackButton.Text = "Back"
         Me.BackButton.UseVisualStyleBackColor = True
-        '
-        'SettingsButton
-        '
-        Me.SettingsButton.Location = New System.Drawing.Point(292, 0)
-        Me.SettingsButton.Name = "SettingsButton"
-        Me.SettingsButton.Size = New System.Drawing.Size(145, 125)
-        Me.SettingsButton.TabIndex = 2
-        Me.SettingsButton.Text = "Settings"
-        Me.SettingsButton.UseVisualStyleBackColor = True
         '
         'BottomBar
         '
@@ -68,8 +68,8 @@ Partial Class BottomBar
         Me.ResumeLayout(False)
 
     End Sub
+    Friend WithEvents SettingsButton As System.Windows.Forms.Button
     Friend WithEvents HomeButton As System.Windows.Forms.Button
     Friend WithEvents BackButton As System.Windows.Forms.Button
-    Friend WithEvents SettingsButton As System.Windows.Forms.Button
 
 End Class

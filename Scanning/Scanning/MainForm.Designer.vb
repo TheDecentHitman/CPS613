@@ -27,6 +27,7 @@ Partial Class MainForm
         Me.ScanningTimer = New System.Windows.Forms.Timer(Me.components)
         Me.BottomBar = New Scanning.BottomBar()
         Me.HomeScreen = New Scanning.HomeScreen()
+        Me.FocusLabel = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ScanningTimer
@@ -47,6 +48,14 @@ Partial Class MainForm
         Me.HomeScreen.Size = New System.Drawing.Size(440, 440)
         Me.HomeScreen.TabIndex = 1
         '
+        'FocusLabel
+        '
+        Me.FocusLabel.AutoSize = True
+        Me.FocusLabel.Location = New System.Drawing.Point(13, 13)
+        Me.FocusLabel.Name = "FocusLabel"
+        Me.FocusLabel.Size = New System.Drawing.Size(0, 13)
+        Me.FocusLabel.TabIndex = 2
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -54,6 +63,7 @@ Partial Class MainForm
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.ClientSize = New System.Drawing.Size(534, 762)
+        Me.Controls.Add(Me.FocusLabel)
         Me.Controls.Add(Me.BottomBar)
         Me.Controls.Add(Me.HomeScreen)
         Me.DoubleBuffered = True
@@ -61,9 +71,11 @@ Partial Class MainForm
         Me.Name = "MainForm"
         Me.Text = "CPS613 Scanning Example"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents ScanningTimer As System.Windows.Forms.Timer
     Friend WithEvents HomeScreen As Scanning.HomeScreen
     Friend WithEvents BottomBar As Scanning.BottomBar
+    Friend WithEvents FocusLabel As System.Windows.Forms.Label
 End Class

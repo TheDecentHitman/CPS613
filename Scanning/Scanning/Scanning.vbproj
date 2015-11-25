@@ -265,6 +265,9 @@
     <EmbeddedResource Include="BlindsSpecificRoomScreen.resx">
       <DependentUpon>BlindsSpecificRoomScreen.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BottomBar.resx">
+      <DependentUpon>BottomBar.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CommunicationsScreen.resx">
       <DependentUpon>CommunicationsScreen.vb</DependentUpon>
     </EmbeddedResource>

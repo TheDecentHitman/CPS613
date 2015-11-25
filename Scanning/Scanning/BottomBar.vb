@@ -24,6 +24,8 @@
                     NewScreen = New WindowsSpecificRoomScreen
                 Case "BlindsSpecificRoomScreen"
                     NewScreen = New BlindsSpecificRoomScreen
+                Case "WindowBlindOpenCloseScreen"
+                    NewScreen = New WindowBlindOpenCloseScreen
                 Case "LightsScreen"
                     NewScreen = New LightsScreen
                 Case "LightsSpecificRoomScreen"
@@ -46,26 +48,34 @@
                     NewScreen = New SettingsScreen
             End Select
 
-            MainForm.ChangeScreen(Nothing, NewScreen)
+            If IsNothing(NewScreen) Then
+                MsgBox("No screen found with name " + LastScreenName)
+            Else
+                MainForm.ChangeScreen(Nothing, NewScreen)
+            End If
         Else
             MainForm.scanninglevel = 0
+            MainForm.bottomBarActive = False
+            MainForm.FocusLabel.Focus()
             MainForm.InitializeScanning()
         End If
     End Sub
 
     Private Sub HomeButton_Click(sender As Object, e As EventArgs) Handles HomeButton.Click
-        MainForm.ScreenHistory.Push(MainForm.Controls(1).Name)
-        MainForm.Controls.RemoveAt(1)
-        Dim NewScreen As HomeScreen = New HomeScreen
-        NewScreen.Location = New Point(47, 87)
-        MainForm.Controls.Add(NewScreen)
+        For Each C As Control In MainForm.Controls
+            If Not (TypeOf C Is Label OrElse TypeOf C Is BottomBar) Then
+                MainForm.ChangeScreen(C, New HomeScreen)
+                Exit For
+            End If
+        Next
     End Sub
 
     Private Sub SettingsButton_Click(sender As Object, e As EventArgs) Handles SettingsButton.Click
-        MainForm.ScreenHistory.Push(MainForm.Controls(1).Name)
-        MainForm.Controls.RemoveAt(1)
-        Dim NewScreen As SettingsScreen = New SettingsScreen
-        NewScreen.Location = New Point(47, 87)
-        MainForm.Controls.Add(NewScreen)
+        For Each C As Control In MainForm.Controls
+            If Not (TypeOf C Is Label OrElse TypeOf C Is BottomBar) Then
+                MainForm.ChangeScreen(C, New SettingsScreen)
+                Exit For
+            End If
+        Next
     End Sub
 End Class

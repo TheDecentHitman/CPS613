@@ -151,3 +151,5 @@ H:\cps613\Scanning\Scanning\bin\Debug\Scanning.exe
 H:\cps613\Scanning\Scanning\bin\Debug\Scanning.pdb
 H:\cps613\Scanning\Scanning\bin\Debug\Scanning.xml
 H:\cps613\Scanning\Scanning\obj\Debug\Scanning.WindowBlindOpenCloseScreen.resources
+C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.WindowBlindOpenCloseScreen.resources
+C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.BottomBar.resources
