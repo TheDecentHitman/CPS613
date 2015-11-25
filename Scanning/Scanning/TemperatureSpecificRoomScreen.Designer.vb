@@ -30,9 +30,10 @@ Partial Class TemperatureSpecificRoomScreen
         'TempSpecRoom_BedroomButton
         '
         Me.TempSpecRoom_BedroomButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TempSpecRoom_BedroomButton.Location = New System.Drawing.Point(69, 295)
+        Me.TempSpecRoom_BedroomButton.Location = New System.Drawing.Point(104, 454)
+        Me.TempSpecRoom_BedroomButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TempSpecRoom_BedroomButton.Name = "TempSpecRoom_BedroomButton"
-        Me.TempSpecRoom_BedroomButton.Size = New System.Drawing.Size(303, 115)
+        Me.TempSpecRoom_BedroomButton.Size = New System.Drawing.Size(454, 177)
         Me.TempSpecRoom_BedroomButton.TabIndex = 5
         Me.TempSpecRoom_BedroomButton.Text = "Bedroom"
         Me.TempSpecRoom_BedroomButton.UseVisualStyleBackColor = True
@@ -40,9 +41,10 @@ Partial Class TemperatureSpecificRoomScreen
         'TempSpecRoom_KitchenButton
         '
         Me.TempSpecRoom_KitchenButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TempSpecRoom_KitchenButton.Location = New System.Drawing.Point(69, 163)
+        Me.TempSpecRoom_KitchenButton.Location = New System.Drawing.Point(104, 251)
+        Me.TempSpecRoom_KitchenButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TempSpecRoom_KitchenButton.Name = "TempSpecRoom_KitchenButton"
-        Me.TempSpecRoom_KitchenButton.Size = New System.Drawing.Size(303, 115)
+        Me.TempSpecRoom_KitchenButton.Size = New System.Drawing.Size(454, 177)
         Me.TempSpecRoom_KitchenButton.TabIndex = 4
         Me.TempSpecRoom_KitchenButton.Text = "Kitchen"
         Me.TempSpecRoom_KitchenButton.UseVisualStyleBackColor = True
@@ -50,22 +52,24 @@ Partial Class TemperatureSpecificRoomScreen
         'TempSpecRoom_LivingRoomButton
         '
         Me.TempSpecRoom_LivingRoomButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TempSpecRoom_LivingRoomButton.Location = New System.Drawing.Point(69, 31)
+        Me.TempSpecRoom_LivingRoomButton.Location = New System.Drawing.Point(104, 48)
+        Me.TempSpecRoom_LivingRoomButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TempSpecRoom_LivingRoomButton.Name = "TempSpecRoom_LivingRoomButton"
-        Me.TempSpecRoom_LivingRoomButton.Size = New System.Drawing.Size(303, 115)
+        Me.TempSpecRoom_LivingRoomButton.Size = New System.Drawing.Size(454, 177)
         Me.TempSpecRoom_LivingRoomButton.TabIndex = 3
         Me.TempSpecRoom_LivingRoomButton.Text = "Living Room"
         Me.TempSpecRoom_LivingRoomButton.UseVisualStyleBackColor = True
         '
         'TemperatureSpecificRoomScreen
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.TempSpecRoom_BedroomButton)
         Me.Controls.Add(Me.TempSpecRoom_KitchenButton)
         Me.Controls.Add(Me.TempSpecRoom_LivingRoomButton)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "TemperatureSpecificRoomScreen"
-        Me.Size = New System.Drawing.Size(440, 440)
+        Me.Size = New System.Drawing.Size(660, 677)
         Me.ResumeLayout(False)
 
     End Sub

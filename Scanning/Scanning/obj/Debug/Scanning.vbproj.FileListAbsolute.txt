@@ -188,3 +188,45 @@ C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.Wind
 C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.WindowsAndBlindsScreen.resources
 C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.WindowsSpecificRoomScreen.resources
 C:\Users\Ahmad\Documents\GitHub\CPS613\Scanning\Scanning\obj\Debug\Scanning.vbproj.GenerateResource.Cache
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\bin\Debug\Scanning.exe.config
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.exe
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.xml
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.pdb
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\bin\Debug\Scanning.exe
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\bin\Debug\Scanning.pdb
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\bin\Debug\Scanning.xml
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.vbprojResolveAssemblyReference.cache
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.AudioScreen.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.BlindsSpecificRoomScreen.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.BottomBar.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.CommunicationsScreen.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.DoorsScreen.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.ElevatorScreen.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.EntertainmentScreen.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.EnvironmentScreen.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.FansSpecificRoomScreen.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.HomeScreen.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.incomecall.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.IncomingMessage.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.LightsScreen.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.LightsSpecificRoomScreen.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.MainForm.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.MessageScreen.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.MusicScreen.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.Resources.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.NavigationScreen.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.IncomingPhoneCall.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.PhoneCall.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.PhoneScreen.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.SettingsScreen.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.SubMenu.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.TemperatureAndFansScreen.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.TemperatureSpecificRoomScreen.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.TVScreen.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.WindowBlindOpenCloseScreen.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.WindowsAndBlindsScreen.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.WindowsSpecificRoomScreen.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.vbproj.GenerateResource.Cache
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.phonecall1.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.Fans.resources
+C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.Heaters.resources

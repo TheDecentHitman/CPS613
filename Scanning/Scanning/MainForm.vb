@@ -10,6 +10,8 @@
     Public lightsOn As Boolean() = {False, False, False}
     Public windowsOpen As Boolean() = {False, False, False}
     Public blindsOpen As Boolean() = {False, False, False}
+    Public temperature As Integer = 23
+
 
     Public Sub New()
 
@@ -46,6 +48,10 @@
     End Sub
 
     Public Sub IncomingPhoneCall()
+        StopScanning()
+
+        Me.ChangeScreen(Me, New incomecall)
+        StartScanning()
         ' TODO Stop scanning, create IncomingPhoneCall form, start scanning IncomingPhoneCall form
     End Sub
 

@@ -1,14 +1,26 @@
 ﻿Public Class PhoneScreen
 
     Private Sub PhoneContactEmergencySortButton_Click(sender As Object, e As EventArgs) Handles PhoneContactEmergencySortButton.Click
+        Me.PhoneContactListBox.Items.Clear()
+        Me.PhoneContactListBox.Items.Add("911")
         ' TODO Same thing as sort buttons in AudioScreen, except with lists of contacts
     End Sub
 
     Private Sub PhoneContactFavoritesSortButton_Click(sender As Object, e As EventArgs) Handles PhoneContactFavoritesSortButton.Click
+        Me.PhoneContactListBox.Items.Clear()
+        Me.PhoneContactListBox.Items.Add("Bobby")
+        Me.PhoneContactListBox.Items.Add("Chris")
+        Me.PhoneContactListBox.Items.Add("Alex")
         ' TODO Same thing as sort buttons in AudioScreen, except with lists of contacts
     End Sub
 
     Private Sub PhoneContactAllSortButton_Click(sender As Object, e As EventArgs) Handles PhoneContactAllSortButton.Click
+        Me.PhoneContactListBox.Items.Clear()
+        Me.PhoneContactListBox.Items.Add("Bobby")
+        Me.PhoneContactListBox.Items.Add("Chris")
+        Me.PhoneContactListBox.Items.Add("Alex")
+        Me.PhoneContactListBox.Items.Add("Mom")
+        Me.PhoneContactListBox.Items.Add("Dad")
         ' TODO Same thing as sort buttons in AudioScreen, except with lists of contacts
     End Sub
 
@@ -29,6 +41,8 @@
     End Sub
 
     Private Sub PhoneContactCallButton_Click(sender As Object, e As EventArgs) Handles PhoneContactCallButton.Click
+        MainForm.ChangeScreen(Me, New HomeScreen)
+        MainForm.IncomingPhoneCall()
         ' TODO Stop scanning, create PhoneCall form, start scanning PhoneCall form
     End Sub
 End Class

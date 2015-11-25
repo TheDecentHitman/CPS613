@@ -1,6 +1,7 @@
 ﻿Public Class TemperatureAndFansScreen
 
     Private Sub TempCentralAptButton_Click(sender As Object, e As EventArgs) Handles TempCentralAptButton.Click
+        MainForm.ChangeScreen(Me, New Heaters)
         ' TODO
     End Sub
 
@@ -9,7 +10,7 @@
     End Sub
 
     Private Sub FansCentralAptButton_Click(sender As Object, e As EventArgs) Handles FansCentralAptButton.Click
-        ' TODO
+        MainForm.ChangeScreen(Me, New Fans) ' TODO
     End Sub
 
     Private Sub FansSpecRoomButton_Click(sender As Object, e As EventArgs) Handles FansSpecRoomButton.Click
