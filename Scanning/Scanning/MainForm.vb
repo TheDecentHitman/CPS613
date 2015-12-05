@@ -1,12 +1,12 @@
 ﻿Public Class MainForm
-    Private setup As Boolean = True
+    Public setup As Boolean = True
     Private totalcontrols As Integer
     Public SelectableControls As Control()
     Public bottomBarActive = False
     Public focusIsOn As Integer
     Public scanninglevel As Integer
     Public ScreenHistory As Stack
-    Public onPhone As Boolean
+    Public onPhone As Boolean = False
     Public lightsOn As Boolean() = {False, False, False}
     Public windowsOpen As Boolean() = {False, False, False}
     Public blindsOpen As Boolean() = {False, False, False}
@@ -23,7 +23,6 @@
         InitializeScanning()
         ScreenHistory = New Stack()
         setup = False
-        onPhone = False
     End Sub
 
     Public Sub ChangeScreen(OldScreen As Control, NewScreen As Control)
@@ -209,6 +208,7 @@
             Timer_Tick(Nothing, Nothing)
         ElseIf scanninglevel = 0 AndAlso TypeOf SelectableControls(focusIsOn) Is SubMenu Then
             scanninglevel = 1
+            BottomBar.BackButton.Text = "Exit SubMenu"
             CType(SelectableControls(focusIsOn), SubMenu).StartInnerScanning()
         End If
     End Sub

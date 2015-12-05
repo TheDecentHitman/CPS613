@@ -20,6 +20,16 @@ Public Class AudioScreen
         Next
         AudioDeleteButton.Enabled = False
         AudioListBox.SelectedIndex = 0
+
+        If Not IsNothing(sender) Then
+            AudioSortSubMenu.BackColor = DefaultBackColor
+            MainForm.bottomBarActive = False
+            MainForm.FocusLabel.Focus()
+            MainForm.focusIsOn = 4
+            MainForm.scanninglevel = 1
+            AudioListSubMenu.BackColor = Color.LightBlue
+            AudioListSubMenu.StartInnerScanning()
+        End If
     End Sub
 
     Private Sub AudioPodcastsSortButton_Click(sender As Object, e As EventArgs) Handles AudioPodcastsSortButton.Click
@@ -35,6 +45,16 @@ Public Class AudioScreen
         Next
         AudioDeleteButton.Enabled = True
         AudioListBox.SelectedIndex = 0
+
+        If Not IsNothing(sender) Then
+            AudioSortSubMenu.BackColor = DefaultBackColor
+            MainForm.bottomBarActive = False
+            MainForm.FocusLabel.Focus()
+            MainForm.focusIsOn = 4
+            MainForm.scanninglevel = 1
+            AudioListSubMenu.BackColor = Color.LightBlue
+            AudioListSubMenu.StartInnerScanning()
+        End If
     End Sub
 
     Private Sub AudioLocalSortButton_Click(sender As Object, e As EventArgs) Handles AudioLocalSortButton.Click
@@ -50,6 +70,16 @@ Public Class AudioScreen
         Next
         AudioDeleteButton.Enabled = True
         AudioListBox.SelectedIndex = 0
+
+        If Not IsNothing(sender) Then
+            AudioSortSubMenu.BackColor = DefaultBackColor
+            MainForm.bottomBarActive = False
+            MainForm.FocusLabel.Focus()
+            MainForm.focusIsOn = 4
+            MainForm.scanninglevel = 1
+            AudioListSubMenu.BackColor = Color.LightBlue
+            AudioListSubMenu.StartInnerScanning()
+        End If
     End Sub
 
     Private Sub AudioUpButton_Click(sender As Object, e As EventArgs) Handles AudioUpButton.Click
@@ -77,6 +107,6 @@ Public Class AudioScreen
     End Sub
 
     Private Sub AudioPlayPauseButton_Click(sender As Object, e As EventArgs) Handles AudioPlayPauseButton.Click
-        ' TODO
+        My.Computer.Audio.Play(My.Computer.FileSystem.GetFiles("../../Resources/Audio", FileIO.SearchOption.SearchAllSubDirectories, "*" + AudioListBox.Items(AudioListBox.SelectedIndex) + "*").First())
     End Sub
 End Class

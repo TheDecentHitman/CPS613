@@ -1,31 +1,83 @@
 ﻿Public Class PhoneScreen
+    Private SelectedSortButton As Button
 
     Private Sub PhoneScreen_ControlAdded(sender As Object, e As EventArgs) Handles Me.ControlAdded
         PhoneContactEmergencySortButton_Click(Nothing, Nothing)
     End Sub
 
     Private Sub PhoneContactEmergencySortButton_Click(sender As Object, e As EventArgs) Handles PhoneContactEmergencySortButton.Click
-        Me.PhoneContactListBox.Items.Clear()
-        Me.PhoneContactListBox.Items.Add("911")
+        If Not IsNothing(SelectedSortButton) Then
+            SelectedSortButton.Enabled = True
+            PhoneContactListBox.Items.Clear()
+        End If
+        PhoneContactEmergencySortButton.Enabled = False
+        SelectedSortButton = PhoneContactEmergencySortButton
+
+        PhoneContactListBox.Items.Clear()
+        PhoneContactListBox.Items.Add("911")
         PhoneContactListBox.SelectedIndex = 0
+
+        If Not IsNothing(sender) Then
+            PhoneContactSortSubMenu.BackColor = DefaultBackColor
+            MainForm.bottomBarActive = False
+            MainForm.FocusLabel.Focus()
+            MainForm.focusIsOn = 4
+            MainForm.scanninglevel = 1
+            PhoneContactListSubMenu.BackColor = Color.LightBlue
+            PhoneContactListSubMenu.StartInnerScanning()
+        End If
     End Sub
 
     Private Sub PhoneContactFavoritesSortButton_Click(sender As Object, e As EventArgs) Handles PhoneContactFavoritesSortButton.Click
-        Me.PhoneContactListBox.Items.Clear()
-        Me.PhoneContactListBox.Items.Add("Bobby")
-        Me.PhoneContactListBox.Items.Add("Chris")
-        Me.PhoneContactListBox.Items.Add("Alex")
+        If Not IsNothing(SelectedSortButton) Then
+            SelectedSortButton.Enabled = True
+            PhoneContactListBox.Items.Clear()
+        End If
+        PhoneContactFavoritesSortButton.Enabled = False
+        SelectedSortButton = PhoneContactFavoritesSortButton
+
+        PhoneContactListBox.Items.Clear()
+        PhoneContactListBox.Items.Add("Bobby")
+        PhoneContactListBox.Items.Add("Chris")
+        PhoneContactListBox.Items.Add("Alex")
         PhoneContactListBox.SelectedIndex = 0
+
+        If Not IsNothing(sender) Then
+            PhoneContactSortSubMenu.BackColor = DefaultBackColor
+            MainForm.bottomBarActive = False
+            MainForm.FocusLabel.Focus()
+            MainForm.focusIsOn = 4
+            MainForm.scanninglevel = 1
+            PhoneContactListSubMenu.BackColor = Color.LightBlue
+            PhoneContactListSubMenu.StartInnerScanning()
+        End If
     End Sub
 
     Private Sub PhoneContactAllSortButton_Click(sender As Object, e As EventArgs) Handles PhoneContactAllSortButton.Click
-        Me.PhoneContactListBox.Items.Clear()
-        Me.PhoneContactListBox.Items.Add("Bobby")
-        Me.PhoneContactListBox.Items.Add("Chris")
-        Me.PhoneContactListBox.Items.Add("Alex")
-        Me.PhoneContactListBox.Items.Add("Mom")
-        Me.PhoneContactListBox.Items.Add("Dad")
+        If Not IsNothing(SelectedSortButton) Then
+            SelectedSortButton.Enabled = True
+            PhoneContactListBox.Items.Clear()
+        End If
+        PhoneContactAllSortButton.Enabled = False
+        SelectedSortButton = PhoneContactAllSortButton
+
+        PhoneContactListBox.Items.Clear()
+        PhoneContactListBox.Items.Add("Bobby")
+        PhoneContactListBox.Items.Add("Chris")
+        PhoneContactListBox.Items.Add("Alex")
+        PhoneContactListBox.Items.Add("Mom")
+        PhoneContactListBox.Items.Add("Dad")
         PhoneContactListBox.SelectedIndex = 0
+
+        If Not IsNothing(sender) Then
+            PhoneContactSortSubMenu.BackColor = DefaultBackColor
+            MainForm.bottomBarActive = False
+            MainForm.FocusLabel.Focus()
+            MainForm.focusIsOn = 4
+            MainForm.scanninglevel = 1
+            PhoneContactListSubMenu.BackColor = Color.LightBlue
+            PhoneContactListSubMenu.StartInnerScanning()
+        End If
     End Sub
 
     Private Sub PhoneContactUpButton_Click(sender As Object, e As EventArgs) Handles PhoneContactUpButton.Click
@@ -47,6 +99,5 @@
     Private Sub PhoneContactCallButton_Click(sender As Object, e As EventArgs) Handles PhoneContactCallButton.Click
         MainForm.ChangeScreen(Me, New HomeScreen)
         MainForm.IncomingPhoneCall()
-        ' TODO Stop scanning, create PhoneCall form, start scanning PhoneCall form
     End Sub
 End Class
