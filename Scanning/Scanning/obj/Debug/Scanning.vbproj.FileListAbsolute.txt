@@ -230,3 +230,7 @@ C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.vb
 C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.phonecall1.resources
 C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.Fans.resources
 C:\Users\Jenis\Desktop\New folder\CPS613\Scanning\Scanning\obj\Debug\Scanning.Heaters.resources
+C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.Fans.resources
+C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.Heaters.resources
+C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.incomecall.resources
+C:\Users\Zakwiz\Documents\Visual Studio 2013\Projects\CPS613\Scanning\Scanning\obj\Debug\Scanning.phonecall1.resources

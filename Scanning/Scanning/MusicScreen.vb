@@ -17,6 +17,16 @@
             MusicListBox.Items.Add(FileName.Substring(FileName.LastIndexOf("\") + 1))
         Next
         MusicListBox.SelectedIndex = 0
+
+        If Not IsNothing(sender) Then
+            MusicSortSubMenu.BackColor = DefaultBackColor
+            MainForm.bottomBarActive = False
+            MainForm.FocusLabel.Focus()
+            MainForm.focusIsOn = 4
+            MainForm.scanninglevel = 1
+            MusicListSubMenu.BackColor = Color.LightBlue
+            MusicListSubMenu.StartInnerScanning()
+        End If
     End Sub
 
     Private Sub ArtistsMusicSortButton_Click(sender As Object, e As EventArgs) Handles ArtistsMusicSortButton.Click
@@ -31,6 +41,16 @@
             MusicListBox.Items.Add(FileName.Substring(FileName.LastIndexOf("\") + 1))
         Next
         MusicListBox.SelectedIndex = 0
+
+        If Not IsNothing(sender) Then
+            MusicSortSubMenu.BackColor = DefaultBackColor
+            MainForm.bottomBarActive = False
+            MainForm.FocusLabel.Focus()
+            MainForm.focusIsOn = 4
+            MainForm.scanninglevel = 1
+            MusicListSubMenu.BackColor = Color.LightBlue
+            MusicListSubMenu.StartInnerScanning()
+        End If
     End Sub
 
     Private Sub MusicUpButton_Click(sender As Object, e As EventArgs) Handles MusicUpButton.Click
@@ -54,6 +74,6 @@
     End Sub
 
     Private Sub MusicPlayPauseButton_Click(sender As Object, e As EventArgs) Handles MusicPlayPauseButton.Click
-        ' TODO
+        My.Computer.Audio.Play(My.Computer.FileSystem.GetFiles("../../Resources/Music", FileIO.SearchOption.SearchAllSubDirectories, "*" + MusicListBox.Items(MusicListBox.SelectedIndex) + "*").First())
     End Sub
 End Class

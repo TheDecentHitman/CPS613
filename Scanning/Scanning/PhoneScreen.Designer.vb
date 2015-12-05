@@ -101,6 +101,7 @@ Partial Class PhoneScreen
         '
         'PhoneContactEmergencySortButton
         '
+        Me.PhoneContactEmergencySortButton.Enabled = False
         Me.PhoneContactEmergencySortButton.Location = New System.Drawing.Point(34, 3)
         Me.PhoneContactEmergencySortButton.Name = "PhoneContactEmergencySortButton"
         Me.PhoneContactEmergencySortButton.Size = New System.Drawing.Size(75, 48)

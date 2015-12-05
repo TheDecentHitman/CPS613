@@ -8,6 +8,10 @@
             Select Case LastScreenName
                 Case "HomeScreen"
                     NewScreen = New HomeScreen
+                    If MainForm.onPhone Then
+                        CType(NewScreen, HomeScreen).CommunicationsButton.Text = "Phone"
+                        CType(NewScreen, HomeScreen).CommunicationsButton.ForeColor = Color.Green
+                    End If
                 Case "NavigationScreen"
                     NewScreen = New NavigationScreen
                 Case "DoorsScreen"
@@ -71,13 +75,19 @@
             MainForm.bottomBarActive = False
             MainForm.FocusLabel.Focus()
             MainForm.InitializeScanning()
+            Me.BackButton.Text = "Back"
         End If
     End Sub
 
     Private Sub HomeButton_Click(sender As Object, e As EventArgs) Handles HomeButton.Click
         For Each C As Control In MainForm.Controls
             If Not (TypeOf C Is Label OrElse TypeOf C Is BottomBar) Then
-                MainForm.ChangeScreen(C, New HomeScreen)
+                Dim NewScreen As HomeScreen = New HomeScreen
+                If MainForm.onPhone Then
+                    NewScreen.CommunicationsButton.Text = "Phone"
+                    NewScreen.CommunicationsButton.ForeColor = Color.Green
+                End If
+                MainForm.ChangeScreen(C, NewScreen)
                 Exit For
             End If
         Next

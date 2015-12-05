@@ -22,7 +22,6 @@ Partial Class MusicScreen
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.PlaylistsMusicSortButton = New System.Windows.Forms.Button()
         Me.MusicPlayerSubMenu2 = New Scanning.SubMenu()
         Me.MusicShuffleButton = New System.Windows.Forms.Button()
         Me.MusicRepeatButton = New System.Windows.Forms.Button()
@@ -39,21 +38,12 @@ Partial Class MusicScreen
         Me.MusicListBox = New System.Windows.Forms.ListBox()
         Me.MusicSortSubMenu = New Scanning.SubMenu()
         Me.ArtistsMusicSortButton = New System.Windows.Forms.Button()
+        Me.PlaylistsMusicSortButton = New System.Windows.Forms.Button()
         Me.MusicPlayerSubMenu2.SuspendLayout()
         Me.MusicPlayerSubMenu.SuspendLayout()
         Me.MusicListSubMenu.SuspendLayout()
         Me.MusicSortSubMenu.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'PlaylistsMusicSortButton
-        '
-        Me.PlaylistsMusicSortButton.Enabled = False
-        Me.PlaylistsMusicSortButton.Location = New System.Drawing.Point(81, 3)
-        Me.PlaylistsMusicSortButton.Name = "PlaylistsMusicSortButton"
-        Me.PlaylistsMusicSortButton.Size = New System.Drawing.Size(75, 48)
-        Me.PlaylistsMusicSortButton.TabIndex = 4
-        Me.PlaylistsMusicSortButton.Text = "Playlists"
-        Me.PlaylistsMusicSortButton.UseVisualStyleBackColor = True
         '
         'MusicPlayerSubMenu2
         '
@@ -209,9 +199,19 @@ Partial Class MusicScreen
         Me.ArtistsMusicSortButton.Location = New System.Drawing.Point(275, 3)
         Me.ArtistsMusicSortButton.Name = "ArtistsMusicSortButton"
         Me.ArtistsMusicSortButton.Size = New System.Drawing.Size(75, 48)
-        Me.ArtistsMusicSortButton.TabIndex = 5
+        Me.ArtistsMusicSortButton.TabIndex = 4
         Me.ArtistsMusicSortButton.Text = "Artists"
         Me.ArtistsMusicSortButton.UseVisualStyleBackColor = True
+        '
+        'PlaylistsMusicSortButton
+        '
+        Me.PlaylistsMusicSortButton.Enabled = False
+        Me.PlaylistsMusicSortButton.Location = New System.Drawing.Point(81, 3)
+        Me.PlaylistsMusicSortButton.Name = "PlaylistsMusicSortButton"
+        Me.PlaylistsMusicSortButton.Size = New System.Drawing.Size(75, 48)
+        Me.PlaylistsMusicSortButton.TabIndex = 3
+        Me.PlaylistsMusicSortButton.Text = "Playlists"
+        Me.PlaylistsMusicSortButton.UseVisualStyleBackColor = True
         '
         'MusicScreen
         '
